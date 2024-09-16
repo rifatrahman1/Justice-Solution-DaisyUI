@@ -38,13 +38,10 @@
         }
       </script>
 </head>
-<body class="container max-w-screen-xl mx-auto poppins-font">
-    
-
-
+<body class=" poppins-font">
 
     <!-- -----header section start----- -->
-     <section>
+     <section class="container max-w-screen-xl mx-auto">
         <!-- navbar start -->
          <nav class="flex justify-between my-16 p-3">
             <div class="flex gap-4 cursor-pointer">
@@ -76,10 +73,12 @@
                 <button class="btn bg-btn-colors text-white text-[18px] font-semibold">Free Consultation</button>
             </div>
          </nav>
+        </section>
         <!-- navbar end -->
 
         <!-- banner section start -->
-         <section>
+    
+         <section class="container max-w-screen-xl mx-auto">
             <div>
                 <div class="carousel w-full flex justify-center">
                     <div class="carousel-item lg:w-[1170px] h-[550px] bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner.png)] rounded-2xl">
@@ -96,11 +95,11 @@
             </div>
          </section>
         <!-- banner section end -->
-     </section>
+
     <!-- -----header section end----- -->
 
     <!-- -----main section start----- -->
-     <main>
+     <main class="container max-w-screen-xl mx-auto">
         <!-- the legal practice area -->
          <section>
             <div class="my-32 text-center w-[400px] lg:w-[720px] space-y-6 mx-auto">
@@ -334,40 +333,46 @@
     <!-- -----main section end----- -->
 
     <!-- ----footer section start------ -->
-    <footer class="">
-        <div class="footer bg-base-200 text-base-content p-10">
-            <nav>
-                <h6 class="footer-title">Services</h6>
-                <a class="link link-hover">Branding</a>
-                <a class="link link-hover">Design</a>
-                <a class="link link-hover">Marketing</a>
-                <a class="link link-hover">Advertisement</a>
+    <footer class="bg-[#111111] lg:flex-row ">
+        <div class="footer container max-w-screen-xl mx-auto text-white p-10">
+            <nav class="flex flex-col text-center gap-y-10 w-[260px]">
+                <div class="flex items-center gap-4">
+                  <img src="images/logo.png" alt="">
+                  <h2 class="eb-garamond text-4xl font-extrabold">Justice</h2>
+                </div>
+                <div>
+                  <p class="text-gray-300">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                </div>
+              </nav>
+              <nav class="">
+                <h6 class="eb-garamond text-2xl font-extrabold mb-12">Usefull Link</h6>
+                <a class="link link-hover text-gray-300">Home</a>
+                <a class="link link-hover text-gray-300">About Us</a>
+                <a class="link link-hover text-gray-300">Cases</a>
+                <a class="link link-hover text-gray-300">Blog</a>
+                <a class="link link-hover text-gray-300">Contact Us</a>
               </nav>
               <nav>
-                <h6 class="footer-title">Company</h6>
-                <a class="link link-hover">About us</a>
-                <a class="link link-hover">Contact</a>
-                <a class="link link-hover">Jobs</a>
-                <a class="link link-hover">Press kit</a>
-              </nav>
-              <nav>
-                <h6 class="footer-title">Legal</h6>
-                <a class="link link-hover">Terms of use</a>
-                <a class="link link-hover">Privacy policy</a>
-                <a class="link link-hover">Cookie policy</a>
+                <h6 class="eb-garamond text-2xl font-extrabold mb-12">Contact Now</h6>
+                <p class="text-gray-300">555 4th 5t NW, Washington <br>
+                  DC 20530, United States</p>
+                <p class="text-gray-300">+88 01750 000 000 <br>
+                  +88 01750 000 000</p>
+                <p class="text-gray-300">info@gmail.com <br>
+                  info@gmail.com</p>
               </nav>
               <form>
-                <h6 class="footer-title">Newsletter</h6>
-                <fieldset class="form-control w-80">
-                  <label class="label">
-                    <span class="label-text">Enter your email address</span>
-                  </label>
+                <h6 class="eb-garamond text-2xl font-extrabold mb-12">Subscribe</h6>
+                <fieldset class="form-control w-80 space-y-4">
+                  <p class="text-gray-300">Subscribe for our latest & <br> Articles. We Won’t Give You <br> Spam Mails</p>
                   <div class="join">
                     <input
                       type="text"
                       placeholder="username@site.com"
                       class="input input-bordered join-item" />
-                    <button class="btn btn-primary join-item">Subscribe</button>
+                    <button class="btn bg-btn-colors border-none join-item">
+                      <img src="images/Frame.png" alt="">
+                    </button>
                   </div>
                 </fieldset>
               </form>
