@@ -6,6 +6,8 @@
     <!-- tailwind and daisy ui link up -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- EB Garamond font by google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,8 +22,95 @@
             font-family: "EB Garamond", serif;
         }
     </style>
+    <!-- extra daisy ui link -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'btn-colors':'#B68C5A',
+                'p-tag':'#E7E7E7'
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
+<body class="container max-w-screen-xl mx-auto poppins-font">
     
+
+
+
+    <!-- -----header section start----- -->
+     <section>
+        <!-- navbar start -->
+         <nav class="flex justify-between my-16">
+            <div class="flex gap-4 cursor-pointer">
+                <img src="images/logo.png" alt="">
+                <h2 class="eb-garamond text-4xl font-extrabold">Justice</h2>
+            </div>
+            <div class="hidden lg:flex items-center gap-8">
+                <div>
+                    <a href="">Home</a>
+                </div>
+                <div class="flex items-center gap-1">
+                    <a href="">Services</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="flex items-center gap-1">
+                    <a href="">Cases</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="flex items-center gap-1">
+                    <a href="">Blog</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="flex items-center gap-1">
+                    <a href="">Contact Us</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+            <div>
+                <button class="btn bg-btn-colors text-white text-[18px] font-semibold">Free Consultation</button>
+            </div>
+         </nav>
+        <!-- navbar end -->
+
+        <!-- banner section start -->
+         <section>
+            <div>
+                <div class="carousel w-full flex justify-center">
+                    <div class="carousel-item w-[1170px] h-[550px] bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner.png)] rounded-2xl">
+                      <div class="flex flex-col items-center justify-center text-center space-y-8 w-[700px] mx-auto ">
+                        <h1 class="text-7xl text-white eb-garamond">We Provide Effective Legal Solutions</h1>
+                        <p class="text-p-tag text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <div class="flex gap-6">
+                            <input class="w-[500px] h-[60px] rounded-2xl px-5" type="text" name="" id="" placeholder="Services your services">
+                            <input class="styled text-white px-12 py-4 bg-btn-colors rounded-2xl cursor-pointer" type="button" value="Search" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+         </section>
+        <!-- banner section end -->
+     </section>
+    <!-- -----header section end----- -->
+
+    <!-- -----main section start----- -->
+     <main>
+
+     </main>
+    <!-- -----main section end----- -->
+
+    <!-- ----footer section start------ -->
+     <footer>
+
+     </footer>
+    <!-- ----footer section end------ -->
+
+
+
 </body>
 </html>
